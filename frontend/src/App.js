@@ -26,15 +26,16 @@ function App() {
 
 
   return (
-    
-      <div className="App list-group-item justify-content-center align-items-center mx-auto" style={{"width":"400px", "backgroundColor":"white", "marginTop":"15px"}}>
-      <h1 className='card text-white bg-primary mb-1' styleName="max-width: 20rem;">Todo Manager</h1>
-      <h6 className='card text-white bg-primary mb-3'>FastApi   React   MongoDB</h6>
+      <div className='app-container'>
+      <div className='center-container'>    
+      <div className="App list-group-item justify-content-center align-items-center mx-auto" style={{"width":"400px", "backgroundColor":"transparent"}}>
+      <h1 className='card text-white bg-primary mb-1' styleName="max-width: 20rem;">Task Manager</h1>
+      <h6 className='card text-white bg-primary mb-3'>What do you want to do?</h6>
         <div className='card-body'>
         <h5 className='card text-white bg-dark mb-3'>Add Your Task</h5>
           <span className='card-text'>
-          <input className='mb-2 form-control titleIn' onChange={event => setTitle(event.target.value)} placeholder='Title'/>
-          <input className='mb-2 form-control desIn' onChange={event => setDesc(event.target.value)} placeholder='Description'/>
+          <input className='mb-2 form-control titleIn' onChange={event => setTitle(event.target.value)} placeholder='タイトル'/>
+          <input className='mb-2 form-control desIn' onChange={event => setDesc(event.target.value)} placeholder='内容'/>
           <button className='btn btn-outline-primary mx-2 mb-3' style={{'borderRadius':'50px',"font-weight":"bold"}} onClick={addTodoHandler}>Add Task</button>
           </span>
 
@@ -43,9 +44,10 @@ function App() {
             <TodoView todoList={todolist}/>
           </div>
         </div>
-        <h6 className='card text-dark bg-warning py-1 mb-0'>Copyright 2023, All rights reserved &copy;</h6>
+        <h6 className='card text-dark bg-warning py-1 mb-0'>Full Stack Project by <a href='https://github.com/TechWithJin/Full-Stack-Task-Manager-App'>TechWithJin</a></h6>
       </div>
-    
+      </div>
+      </div>
   );
 }
 
