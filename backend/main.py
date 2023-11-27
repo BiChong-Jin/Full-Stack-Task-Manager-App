@@ -8,7 +8,7 @@ app = FastAPI()
 from database import (fetch_one_todo, fetch_all_todos, create_todo, update_todo, remove_todo)
 
 # set origin for frontend
-origins = ['https://task-manager-z6tb.onrender.com']
+origins = ['*']
 
 app.add_middleware(
     CORSMiddleware,
