@@ -5,3 +5,4 @@ dnspython
 requests
 pymongo
 pydantic
+fastapi.middleware.cors
