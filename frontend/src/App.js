@@ -12,7 +12,7 @@ function App() {
 
     // read all todos from backend
     useEffect(() => {
-      axios.get('http://0.0.0.0:10000/api/todo')
+      axios.get('https://task-manager-api-txf8.onrender.com/api/todo')
         .then(res => {
           setTodoList(res.data)
         })
@@ -20,7 +20,7 @@ function App() {
 
     // post a task
     const addTodoHandler = () => {
-      axios.post('http://0.0.0.0:10000/api/todo/', {'title':title, 'description':desc})
+      axios.post('https://task-manager-api-txf8.onrender.com/api/todo/', {'title':title, 'description':desc})
       .then(res => console.log(res))
     };
 
