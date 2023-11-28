@@ -5,4 +5,4 @@ dnspython
 requests
 pymongo
 pydantic
-
+pydantic_settings
