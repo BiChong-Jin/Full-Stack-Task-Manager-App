@@ -44,7 +44,7 @@ function App() {
             <TodoView todoList={todolist}/>
           </div>
         </div>
-        <h6 className='card text-dark bg-warning py-1 mb-0'>Full Stack Project by <a href='https://github.com/TechWithJin/Full-Stack-Task-Manager-App'>TechWithJin</a></h6>
+        <h6 className='card text-dark bg-warning py-1 mb-0'>Full Stack App <a href='https://github.com/TechWithJin/Full-Stack-Task-Manager-App'>TechWithJin</a></h6>
       </div>
       </div>
       </div>
