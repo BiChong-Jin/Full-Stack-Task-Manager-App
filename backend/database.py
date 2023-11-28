@@ -1,5 +1,6 @@
 from model import Todo
 import motor.motor_asyncio
+from motor.motor_asyncio import AsyncIOMotorClient
 
 client = motor.motor_asyncio.AsyncIOMotorClient('mongodb+srv://Jin:qwertyuiop@fram-stack.phq1tso.mongodb.net/')
 
