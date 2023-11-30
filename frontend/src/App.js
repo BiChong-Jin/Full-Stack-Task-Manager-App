@@ -36,7 +36,16 @@ function App() {
           <span className='card-text'>
           <input className='mb-2 form-control titleIn' onChange={event => setTitle(event.target.value)} placeholder='タイトル'/>
           <input className='mb-2 form-control desIn' onChange={event => setDesc(event.target.value)} placeholder='内容'/>
-          <button className='btn btn-outline-primary mx-2 mb-3' style={{'borderRadius':'50px',"font-weight":"bold"}} onClick={addTodoHandler}>Add Task</button>
+          <button 
+            className='btn btn-outline-primary mx-2 mb-3' 
+            style={{'borderRadius':'50px',"font-weight":"bold"}} 
+            onClick={() => {
+              addTodoHandler();
+              window.location.reload();
+            }}
+          >
+            Add Task
+          </button>
           </span>
 
           <h5 className='card text-white bg-dark mb-3'>Your Tasks</h5>
