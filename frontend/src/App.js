@@ -16,7 +16,7 @@ function App() {
         .then(res => {
           setTodoList(res.data)
         })
-    }, [title]); // add an empty array as second parameter here for there are infinite loop occuring.
+    }, [title]); // add an title array as second parameter here for there are infinite loop occuring.
 
     // post a task
     const addTodoHandler = () => {
@@ -29,10 +29,10 @@ function App() {
       <div className='app-container'>
       <div className='center-container'>    
       <div className="App list-group-item justify-content-center align-items-center mx-auto" style={{"width":"400px", "backgroundColor":"transparent"}}>
-      <h1 className='card text-white bg-primary mb-1' styleName="max-width: 20rem;">Task Manager</h1>
+      <h1 className='card text-white bg-primary mb-1' styleName="max-width: 20rem;">Todo App</h1>
       <h6 className='card text-white bg-primary mb-3'>What do you want to do?</h6>
         <div className='card-body'>
-        <h5 className='card text-white bg-dark mb-3'>Add Your Task</h5>
+        <h5 className='card text-white bg-dark mb-3'>Todo 作成</h5>
           <span className='card-text'>
           <input className='mb-2 form-control titleIn' onChange={event => setTitle(event.target.value)} placeholder='タイトル'/>
           <input className='mb-2 form-control desIn' onChange={event => setDesc(event.target.value)} placeholder='内容'/>
@@ -44,11 +44,11 @@ function App() {
               window.location.reload();
             }}
           >
-            Add Task
+            Add Todo
           </button>
           </span>
 
-          <h5 className='card text-white bg-dark mb-3'>Your Tasks</h5>
+          <h5 className='card text-white bg-dark mb-3'>Your Todos</h5>
           <div>
             <TodoView todoList={todolist}/>
           </div>
