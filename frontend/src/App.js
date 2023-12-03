@@ -29,7 +29,7 @@ function App() {
       <div className='app-container'>
       <div className='center-container'>    
       <div className="App list-group-item justify-content-center align-items-center mx-auto" style={{"width":"400px", "backgroundColor":"transparent"}}>
-      <h1 className='card text-white mb-1' style={{ backgroundColor: 'purple', maxWidth: '20rem' }}>Todo App</h1>
+      <h1 className='card text-white bg-dark mb-1' styleName="max-width: 20rem;">Todo App</h1>
       <h6 className='card text-white bg-primary mb-3'>What do you want to do?</h6>
         <div className='card-body'>
         <h5 className='card text-white bg-dark mb-3'>Todo 作成</h5>
